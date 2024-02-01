@@ -1,0 +1,34 @@
+Read me Ristinolla
+
+Ohjelma ja kommentit on kirjoitettu Suomeksi.
+Ristinolla.c;n main() on tarkoituksella pelkistetty.
+
+Ohjelma koostuu kahdeksasta funtiosta.
+
+void nollaaKentta();                               //Nollaa pelikentän muistin
+void tulostaKentta(char kentta[3][3]);             //Tulostaa pelikentän
+int vapaitaRuutuja();                              //Palauttaa vapaiden ruutujan määrän
+void pelaajanVuoro();                              //Kysyy mihin X laitetaan
+void tietokoneenVuoro();                           //Arpoo vastustajan siirron
+char voittaja();                                   //Palauttaa voittajan
+void tulostaaVoittajan(char);                      //Tulostaa voittajan
+void tiktaktoe();                                  //Aloittaa pelin
+
+Pelaaja 'X' ja tietokone 'O' on määritettu (#define) ristinolla.h kirjaston headerissä. 
+
+Pelikenttänä toimii 3*3 char array.
+
+For loopeilla on pystytty typistämään koodin määrää ja niitä käytetään:
+-Pelikentän tulostukseen
+-Pelikentän arvojen nollaukseen
+-Vapaiden ruutujen etsimiseen
+-Voittajan tarkastamiseen
+
+Tietokoneen siirrot arvotaan randomilla, muutta ohjelmassa ei ole lisättyä tekoälyä tai logiikkaa,
+jolloin tietikone tekisi optimaalisia siirtoja.
+
+01.02.2024
+
+
+
+
